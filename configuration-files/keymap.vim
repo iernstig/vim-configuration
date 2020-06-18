@@ -1,21 +1,31 @@
 map <space> <leader>
 inoremap <c-c> <esc>
 let maplocalleader="\\"
-"" TODO: Create window menu
-"" TODO: Implement which-key
-nnoremap <leader>d dd
 nnoremap <leader>es :tabe $HOME/.vim/configuration-loader.vim<Cr> "edit settings
 nnoremap <leader>sv :source $MYVIMRC<cr>
 " goto next or previous buffer
 nnoremap <leader>bn :bn<cr>
 nnoremap <leader>bp :bp<cr>
 nnoremap <leader>nn :tabnew<cr>
+nnoremap <leader>bb :Buffers<cr> "" FZF
 " save and close buffer
-nnoremap qw :w\|bd<cr>
 nnoremap qq :bd<cr>
 " source current file 
 nnoremap <leader>ss :w<cr>
 nnoremap <leader>so :execute ":so %"<cr> :echo "sourced ".getreg('%')<cr>
+
+""enable and disable COC
+nnoremap <leader>cd :CocDisable<cr>
+nnoremap <leader>ce :CocEnable<cr>
+
+
+"" FZF mappings
+nnoremap <leader>cc :Commands<cr>
+nnoremap <leader>ll :Lines<cr>
+nnoremap <leader>gf :GFiles<cr>
+nnoremap <leader>hh :History<cr>
+
+
 "" window nav 
 nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
