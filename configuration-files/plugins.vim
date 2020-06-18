@@ -7,8 +7,7 @@ Plug 'morhetz/gruvbox'
 
 " Utilities
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'junegunn/vim-easy-align'
-Plug 'aserebryakov/vim-todo-lists'
+Plug 'junegunn/vim-easy-align' "Shortcuts??
 
 "Files and sessions
 Plug 'francoiscabrol/ranger.vim'
@@ -29,7 +28,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'wlangstroth/vim-racket'
 
-Plug 'bagrat/vim-buffet'
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 "" Plugin configurations
