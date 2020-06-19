@@ -23,6 +23,7 @@ nnoremap <leader>ce :CocEnable<cr>
 nnoremap <leader>cc :Commands<cr>
 nnoremap <leader>ll :Lines<cr>
 nnoremap <leader>gf :GFiles<cr>
+nnoremap <leader>ff :Files<cr>
 nnoremap <leader>hh :History<cr>
 
 
