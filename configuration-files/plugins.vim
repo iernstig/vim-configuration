@@ -30,6 +30,16 @@ Plug 'wlangstroth/vim-racket'
 
 Plug 'preservim/nerdcommenter'
 
+"" DEBUGGING
+Plug 'puremourning/vimspector'
+
+"" GTD
+Plug 'phb1/gtd.vim'
+
+
+"" TMUX nav
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 "" Plugin configurations
