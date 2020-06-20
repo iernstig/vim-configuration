@@ -8,8 +8,8 @@ nnoremap <leader>bn :bn<cr>
 nnoremap <leader>bp :bp<cr>
 nnoremap <leader>nn :tabnew<cr>
 nnoremap <leader>bb :Buffers<cr> "" FZF
+nnoremap <leader>qq :bd<cr>
 " save and close buffer
-nnoremap qq :bd<cr>
 " source current file 
 nnoremap <leader>ss :w<cr>
 nnoremap <leader>so :execute ":so %"<cr> :echo "sourced ".getreg('%')<cr>
@@ -35,6 +35,11 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-q> <c-w>q
 nnoremap <c-b> <c-w><
 nnoremap <c-n> <c-w>>
+"" Window splits
+nnoremap <c-w>h :split<cr>
+nnoremap <c-w>v :vsplit<cr>
+
+
 "" split explore vertical or horizontal
 nnoremap <leader>sev :execute ":Vexplore! ~/Bookmarks"<cr>
 nnoremap <leader>seh :execute ":Hexplore! ~/Bookmarks"<cr>
