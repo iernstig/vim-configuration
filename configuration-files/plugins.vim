@@ -27,18 +27,20 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'tpope/vim-surround' "wrap forms elements with parenthesis
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'wlangstroth/vim-racket'
+Plug 'sjl/tslime.vim'
 
 Plug 'preservim/nerdcommenter'
 
 "" DEBUGGING
 Plug 'puremourning/vimspector'
 
-"" GTD
-Plug 'phb1/gtd.vim'
+"" TaskWarrior
+Plug 'blindFS/vim-taskwarrior' 
 
 
 "" TMUX nav
 Plug 'christoomey/vim-tmux-navigator'
+
 
 call plug#end()
 
@@ -50,6 +52,7 @@ let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type= 2
 let g:airline#extensions#tabline#show_tab_type = 1
 
+let g:coc_config_home="$HOME/.vim/configuration-files"
 let g:coc_global_extensions = [
 			\'coc-python',
 			\'coc-marketplace'
