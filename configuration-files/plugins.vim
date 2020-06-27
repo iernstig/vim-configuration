@@ -42,6 +42,8 @@ Plug 'blindFS/vim-taskwarrior'
 Plug 'christoomey/vim-tmux-navigator'
 
 
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+
 call plug#end()
 
 "" Plugin configurations
