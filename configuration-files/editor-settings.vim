@@ -17,6 +17,8 @@ set tabstop=4
 set shiftwidth=4
 set clipboard=unnamed "share clipboard osx
 
+set autochdir "" Automatically change dir to current file in editor
+
 if has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
   set signcolumn=number
@@ -25,6 +27,7 @@ else
 endif
 
 
+autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
 "" Remember: split all buffers into tabs using
 "" :tab sball
