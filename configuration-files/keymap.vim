@@ -46,12 +46,6 @@ nnoremap <leader>t? :h tw-quickref<CR>
 "Make changes to a task interactively                      *:TWModifyInteractive*
 "Run the info report                                              *:TWReportInfo*
 
-"" window nav 
-"nnoremap <c-l> <c-w>l
-"nnoremap <c-h> <c-w>h
-"nnoremap <c-j> <c-w>j
-"nnoremap <c-k> <c-w>k
-"nnoremap <c-q> <c-w>q
 nnoremap <c-b> <c-w><
 nnoremap <c-n> <c-w>>
 "" Window splits
