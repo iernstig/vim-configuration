@@ -26,9 +26,7 @@ else
   set signcolumn=yes
 endif
 
+let g:session_dir="~/.vim-sessions"
 
 autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
-
-"" Remember: split all buffers into tabs using
-"" :tab sball
 
