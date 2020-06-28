@@ -11,13 +11,13 @@ nnoremap <leader>bb :Buffers<cr> "" FZF
 nnoremap <leader>qq :bd<cr>
 " save and close buffer
 " source current file 
-nnoremap <leader>ss :w<cr>
 nnoremap <leader>so :execute ":so %"<cr> :echo "sourced ".getreg('%')<cr>
+exec "nnoremap <leader>ss :mks! " . g:session_dir . "/"
+exec 'nnoremap <Leader>sr :so ' . g:session_dir . '/'
 
 ""enable and disable COC
 nnoremap <leader>cd :CocDisable<cr>
 nnoremap <leader>ce :CocEnable<cr>
-
 
 "" FZF mappings
 nnoremap <leader>cc :Commands<cr>
@@ -27,12 +27,31 @@ nnoremap <leader>ff :Files ~<cr>
 nnoremap <leader>hh :History<cr>
 
 
+"" TASKWARRIOR
+nnoremap <leader>tw :TW<CR>
+nnoremap <leader>tu :TWUndo<CR>
+nnoremap <leader>ts :TWSync<CR>
+nnoremap <leader>tr :TWReportInfo<CR>
+nnoremap <leader>t? :h tw-quickref<CR>
+"Delete completed tasks                                      *:TWDeleteCompleted*
+"list history records using |unite.vim|                                *:TWHistory*
+"list bookmarks using |unite.vim|                                     *:TWBookmark*
+"clear bookmarks                                               *:TWBookmarkClear*
+"4.2 Local Commands                                              *tw-lc-commands*
+"------------------------------------------------------------------------------
+"Add an annotation                                                  *:TWAnnotate*
+"Mark task done                                                     *:TWComplete*
+"Delete a task                                                        *:TWDelete*
+"Delete an annotation                                       *:TWDeleteAnnotation*
+"Make changes to a task interactively                      *:TWModifyInteractive*
+"Run the info report                                              *:TWReportInfo*
+
 "" window nav 
-nnoremap <c-l> <c-w>l
-nnoremap <c-h> <c-w>h
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-q> <c-w>q
+"nnoremap <c-l> <c-w>l
+"nnoremap <c-h> <c-w>h
+"nnoremap <c-j> <c-w>j
+"nnoremap <c-k> <c-w>k
+"nnoremap <c-q> <c-w>q
 nnoremap <c-b> <c-w><
 nnoremap <c-n> <c-w>>
 "" Window splits
@@ -52,12 +71,6 @@ xmap ga <Plug>(EasyAlign)
 "" Line nav
 nnoremap H 0
 nnoremap L $
-"" Delete line
-inoremap <c-d> <esc>ddi
-
-"" Upper case 
-nnoremap <leader>t vlw~<esc>
-nnoremap <leader>u vlwU<esc>
 
 "" for inserting in the next parenthesis! -- operator-pending mapping
 onoremap in( :<c-u>normal! f(vi(<cr>
