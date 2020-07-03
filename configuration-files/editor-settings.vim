@@ -4,7 +4,13 @@
 " General editor configuration
 syntax enable
 set encoding=utf-8
-set relativenumber
+" relative no for focused, norelativenumber for unfocused
+set number relativenumber
+":augroup numbertoggle
+":  autocmd!
+":  autocmd BufEnter,FocusGained * set relativenumber
+":  autocmd BufLeave,FocusLost   * set norelativenumber
+":augroup END
 set ignorecase hlsearch "" Searching highlight
 set textwidth=80
 set colorcolumn=80
@@ -18,13 +24,7 @@ set shiftwidth=4
 set clipboard=unnamed "share clipboard osx
 
 set autochdir "" Automatically change dir to current file in editor
-
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+set signcolumn=yes
 
 let g:session_dir="~/.vim-sessions"
 
