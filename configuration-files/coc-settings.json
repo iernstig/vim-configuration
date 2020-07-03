@@ -11,8 +11,9 @@
 	},
 	"codeLens.enable": true,
 	"diagnostic.errorSign": "✘",
-	"diagnostic.warningSign": "",
+	"diagnostic.warningSign": "▲",
 	"diagnostic.infoSign": "",
+	"suggest.enablePreview": true,
 	"suggest.completionItemKindLabels": {
 		"function": "\uf794",
 		"method": "\uf6a6",
@@ -41,6 +42,35 @@
 		"default": "\uf29c"
 	},
 	"languageserver": {
+		"ccls": {
+			"enable":false,
+			"command": "ccls",
+			"filetypes": [
+				"c",
+				"cpp",
+				"objc",
+				"objcpp"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".vim/",
+				".git/",
+				".hg/"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		},
+		"clangd": {
+			"enable": true,
+			"command": "clangd",
+			"rootPatterns": ["compile_commands.json", ".vim/", ".git/", ".hg/"],
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"args": ["-background-index"]
+		},
 		"python": {
 			"command": "python",
 			"args": [
@@ -110,3 +140,4 @@
 		}
 	}
 }
+
