@@ -20,6 +20,7 @@ Plug 'sheerun/vim-polyglot'
 " TODO: Learn build systems for larger projects
 " TODO: https://github.com/mhinz/vim-signify
 " TODO FASTFOLD
+Plug 'tpope/vim-fugitive'
 
 " Lisp and racket extensions
 " Plug 'tpope/vim-surround' "wrap forms elements with parenthesis
