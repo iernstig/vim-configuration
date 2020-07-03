@@ -19,6 +19,26 @@ exec 'nnoremap <Leader>sr :so ' . g:session_dir . '/'
 nnoremap <leader>cd :CocDisable<cr>
 nnoremap <leader>ce :CocEnable<cr>
 
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gr <Plug>(coc-references)
+nmap <leader>rr <Plug>(coc-rename)
+nmap <leader>g[ <Plug>(coc-diagnostic-prev)
+nmap <leader>g] <Plug>(coc-diagnostic-next)
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
+nnoremap <leader>cr :CocRestart
+
 "" FZF mappings
 nnoremap <leader>cc :Commands<cr>
 nnoremap <leader>ll :Lines<cr>
@@ -30,33 +50,17 @@ nnoremap <leader>hh :History<cr>
 "" TASKWARRIOR
 nnoremap <leader>tw :TW<CR>
 nnoremap <leader>tu :TWUndo<CR>
-nnoremap <leader>ts :TWSync<CR>
 nnoremap <leader>tr :TWReportInfo<CR>
 nnoremap <leader>t? :h tw-quickref<CR>
-"Delete completed tasks                                      *:TWDeleteCompleted*
-"list history records using |unite.vim|                                *:TWHistory*
-"list bookmarks using |unite.vim|                                     *:TWBookmark*
-"clear bookmarks                                               *:TWBookmarkClear*
-"4.2 Local Commands                                              *tw-lc-commands*
-"------------------------------------------------------------------------------
-"Add an annotation                                                  *:TWAnnotate*
-"Mark task done                                                     *:TWComplete*
-"Delete a task                                                        *:TWDelete*
-"Delete an annotation                                       *:TWDeleteAnnotation*
-"Make changes to a task interactively                      *:TWModifyInteractive*
-"Run the info report                                              *:TWReportInfo*
 
-nnoremap <c-b> <c-w><
-nnoremap <c-n> <c-w>>
 "" Window splits
 nnoremap <c-w>h :split<cr>
 nnoremap <c-w>v :vsplit<cr>
 
-
 "" split explore vertical or horizontal
 nnoremap <leader>sev :execute ":Vexplore! ~/Bookmarks"<cr>
-nnoremap <leader>seh :execute ":Hexplore! ~/Bookmarks"<cr>
-nnoremap <leader>Tex :execute ":Texplore ~/Bookmarks"<cr>
+nnoremap <leader>seh :execute ":hexplore! ~/bookmarks"<cr>
+nnoremap <leader>tex :execute ":texplore ~/bookmarks"<cr>
 nnoremap <leader>tex :Texplore<cr>
 
 " Visual mode!
