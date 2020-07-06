@@ -21,6 +21,8 @@ Plug 'sheerun/vim-polyglot'
 " TODO: https://github.com/mhinz/vim-signify
 " TODO FASTFOLD
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
 
 " Lisp and racket extensions
 " Plug 'tpope/vim-surround' "wrap forms elements with parenthesis
@@ -36,6 +38,7 @@ Plug 'puremourning/vimspector'
 "" TaskWarrior
 Plug 'blindFS/vim-taskwarrior' 
 
+Plug 'lervag/vimtex'
 
 "" TMUX nav
 Plug 'christoomey/vim-tmux-navigator'
