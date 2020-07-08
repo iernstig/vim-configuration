@@ -44,8 +44,9 @@ Plug 'lervag/vimtex'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
-
 Plug 'tpope/vim-obsession'
+
+Plug 'tmhedberg/SimpylFold'
 
 call plug#end()
 
