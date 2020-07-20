@@ -46,7 +46,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'tpope/vim-obsession'
 
-Plug 'tmhedberg/SimpylFold'
+Plug 'tmhedberg/SimpylFold' "folding for python
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'} "R-language support
 
 call plug#end()
 
