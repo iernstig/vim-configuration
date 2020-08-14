@@ -137,6 +137,25 @@
 					}
 				}
 			}
+		},
+		"haskell": {
+			"command": "/Users/isakernstig/.local/bin/ghcide",
+			"args": ["-l", "hie-log", "-d"], 
+			"rootPatterns": [
+				".stack.yaml",
+				"cabal.config",
+				"package.yaml"
+			],
+			"filetypes": [
+				"hs",
+				"lhs",
+				"haskell"
+			],
+			"initializationOptions": {
+				"languageServerHaskell": {
+				}
+			},
+			"trace.server": "verbose"
 		}
 	}
 }
