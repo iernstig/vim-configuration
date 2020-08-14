@@ -35,5 +35,5 @@ set signcolumn=yes
 
 let g:session_dir="~/.vim-sessions"
 
-autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
+"autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
