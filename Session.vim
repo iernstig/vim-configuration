@@ -36,11 +36,11 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 11) / 22)
+let s:l = 8 - ((7 * winheight(0) + 11) / 22)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
+8
 normal! 0
 lcd ~/.vim/configuration-files/plugin-settings
 wincmd w
