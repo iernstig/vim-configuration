@@ -16,8 +16,7 @@ Plug 'junegunn/fzf.vim'
 " COC and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
-" TODO: CODE-folding as an outline
-" TODO: Learn build systems for larger projects
+Plug 'jiangmiao/auto-pairs'
 " TODO: https://github.com/mhinz/vim-signify
 " TODO FASTFOLD
 Plug 'tpope/vim-fugitive'
