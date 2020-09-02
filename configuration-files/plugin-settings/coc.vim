@@ -1,14 +1,11 @@
 let g:coc_config_home="$HOME/.vim/configuration-files"
 let g:coc_global_extensions = [
-			\'coc-python',
-			\'coc-marketplace',
-			\'coc-tsserver',
-			\'coc-html',
-			\'coc-css'
+			\ 'coc-python', 'coc-marketplace', 'coc-tsserver', 
+			\ 'coc-html', 'coc-css'
 			\]
 ""enable and disable COC
-nnoremap <leader>cd :CocDisable<cr>
-nnoremap <leader>ce :CocEnable<cr>
+nnoremap <leader>cD :CocDisable<cr>
+nnoremap <leader>cE :CocEnable<cr>
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :

@@ -2,8 +2,7 @@
 " Configuration Philosophy: Keep It Simple Stupid
 "
 " General editor configuration
-syntax enable
-set encoding=utf-8
+syntax enable set encoding=utf-8
 " relative no for focused, norelativenumber for unfocused
 set number relativenumber
 ":augroup numbertoggle

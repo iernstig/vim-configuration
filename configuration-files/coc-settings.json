@@ -156,6 +156,10 @@
 				}
 			},
 			"trace.server": "verbose"
+		},
+		"matlab":{
+			"command": "~/tmp",
+			"filetypes": ["mma"]
 		}
 	}
 }
