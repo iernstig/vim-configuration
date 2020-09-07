@@ -16,12 +16,16 @@ Plug 'vim-scripts/Conque-GDB'
 Plug 'Konfekt/FastFold'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'prettier/vim-prettier' ""TODO: automate on save
+Plug 'justinmk/vim-sneak'
 Plug 'airblade/vim-gitgutter'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'wlangstroth/vim-racket'
 Plug 'sjl/tslime.vim'
 Plug 'preservim/nerdcommenter'
-Plug 'blindFS/vim-taskwarrior' 
+if executable('task')
+	Plug 'blindFS/vim-taskwarrior'
+end
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'tpope/vim-obsession'
