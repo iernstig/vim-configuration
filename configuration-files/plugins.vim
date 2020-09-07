@@ -26,6 +26,7 @@ Plug 'preservim/nerdcommenter'
 if executable('task')
 	Plug 'blindFS/vim-taskwarrior'
 end
+Plug 'majutsushi/tagbar' 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'tpope/vim-obsession'
