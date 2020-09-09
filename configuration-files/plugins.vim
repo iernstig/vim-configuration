@@ -12,7 +12,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 " TODO: https://github.com/mhinz/vim-signify
 " TODO FASTFOLD
-Plug 'vim-scripts/Conque-GDB'
 Plug 'Konfekt/FastFold'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
