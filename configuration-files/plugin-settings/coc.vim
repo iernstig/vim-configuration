@@ -4,8 +4,11 @@ let g:coc_global_extensions = [
 			\ 'coc-html', 'coc-css'
 			\]
 ""enable and disable COC
+"
+nnoremap <leader>diag :CocDiagnostics<cr>
 nnoremap <leader>cD :CocDisable<cr>
 nnoremap <leader>cE :CocEnable<cr>
+nmap<leader>qf <Plug>(coc-fix-current)
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
