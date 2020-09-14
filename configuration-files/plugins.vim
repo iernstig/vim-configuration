@@ -1,3 +1,6 @@
+if version > 8
+	:packadd termdebug 
+end
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
