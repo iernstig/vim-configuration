@@ -9,6 +9,7 @@ Plug 'morhetz/gruvbox'
 Plug 'junegunn/vim-easy-align' 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'rking/ag.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'puremourning/vimspector' "TODO: test to debug c-program
 Plug 'sheerun/vim-polyglot'

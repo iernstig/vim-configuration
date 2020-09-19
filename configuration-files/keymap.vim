@@ -8,7 +8,7 @@ nnoremap <leader>bn :bn<cr>
 nnoremap <leader>bp :bp<cr>
 nnoremap <leader>nn :tabnew<cr>
 nnoremap <leader>bb :Buffers<cr> "" FZF
-nnoremap <leader>qq :bd<cr>
+nnoremap <leader>bd :bd<cr>
 " save and close buffer
 " source current file 
 nnoremap <leader>so :execute ":so %"<cr> :echo "sourced ".getreg('%')<cr>
