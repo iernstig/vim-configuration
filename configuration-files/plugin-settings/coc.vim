@@ -1,9 +1,10 @@
 let g:coc_config_home="$HOME/.vim/configuration-files"
 let g:coc_global_extensions = [
 			\ 'coc-python', 'coc-marketplace', 'coc-tsserver', 
-			\ 'coc-html', 'coc-css', 'coc-json', 'coc-vimlsp',
+			\ 'coc-html', 'coc-css', 'coc-vimlsp',
 			\ 'coc-explorer', 'coc-lists' 
 			\]
+"'coc-json', missing since something coc won't update shit
 "" Auto completion popup
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
