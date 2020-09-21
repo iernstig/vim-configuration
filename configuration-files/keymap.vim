@@ -26,5 +26,10 @@ nnoremap <c-w>v :vsplit<cr>
 nnoremap H 0
 nnoremap L $
 
+"" Quitting session without deleting it!
+nnoremap <leader>ZZ :wqa<cr>
+
 "" for inserting in the next parenthesis! -- operator-pending mapping
 onoremap in( :<c-u>normal! f(vi(<cr>
+
+
