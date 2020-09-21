@@ -1,2 +1,2 @@
 nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gp :GPush<cr>
+nnoremap <leader>gp :Gpush<cr>
