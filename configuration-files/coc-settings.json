@@ -13,7 +13,7 @@
 	"diagnostic.errorSign": "✘",
 	"diagnostic.warningSign": "▲",
 	"diagnostic.infoSign": "",
-	"diagnostic.messageTarget": "echo",
+	"diagnostic.messageTarget": "float",
 	"suggest.enablePreview": true,
 	"suggest.completionItemKindLabels": {
 		"function": "\uf794",
@@ -42,6 +42,8 @@
 		"typeParameter": "\uf278",
 		"default": "\uf29c"
 	},
+	"python.linting.enabled": false,
+	"python.linting.flake8Enabled": false,
 	"languageserver": {
 		"ccls": {
 			"enable":false,
@@ -71,6 +73,29 @@
 			"rootPatterns": ["compile_commands.json", ".vim/", ".git/", ".hg/"],
 			"filetypes": ["c", "cpp", "objc", "objcpp"],
 			"args": ["-background-index"]
+		},
+		"haskell": {
+			"command": "/Users/isakernstig/.local/bin/ghcide",
+			"args": ["-l", "hie-log", "-d"], 
+			"rootPatterns": [
+				".stack.yaml",
+				"cabal.config",
+				"package.yaml"
+			],
+			"filetypes": [
+				"hs",
+				"lhs",
+				"haskell"
+			],
+			"initializationOptions": {
+				"languageServerHaskell": {
+				}
+			},
+			"trace.server": "verbose"
+		},
+		"matlab":{
+			"command": "~/tmp",
+			"filetypes": ["mma"]
 		},
 		"python": {
 			"command": "python",
@@ -138,29 +163,6 @@
 					}
 				}
 			}
-		},
-		"haskell": {
-			"command": "/Users/isakernstig/.local/bin/ghcide",
-			"args": ["-l", "hie-log", "-d"], 
-			"rootPatterns": [
-				".stack.yaml",
-				"cabal.config",
-				"package.yaml"
-			],
-			"filetypes": [
-				"hs",
-				"lhs",
-				"haskell"
-			],
-			"initializationOptions": {
-				"languageServerHaskell": {
-				}
-			},
-			"trace.server": "verbose"
-		},
-		"matlab":{
-			"command": "~/tmp",
-			"filetypes": ["mma"]
 		}
 	}
 }
