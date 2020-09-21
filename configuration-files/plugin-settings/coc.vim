@@ -16,7 +16,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-inoremap <silent><expr> <C-k> coc#refresh()
 
 if exists('*complete_info')
   inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -24,6 +23,7 @@ else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
+inoremap <silent><expr> <C-k> coc#refresh()
 nnoremap <leader>diag :CocDiagnostics<cr>
 nmap     <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nmap     <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
