@@ -15,13 +15,6 @@ nnoremap <leader>so :execute ":so %"<cr> :echo "sourced ".getreg('%')<cr>
 exec "nnoremap <leader>ss :mks! " . g:session_dir . "/"
 exec 'nnoremap <Leader>sr :so ' . g:session_dir . '/'
 
-
-"" Window splits
-nnoremap <c-w>h :split<cr>
-nnoremap <c-w>v :vsplit<cr>
-
-" Visual mode!
-
 "" Line nav
 nnoremap H 0
 nnoremap L $
