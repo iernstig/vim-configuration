@@ -11,13 +11,15 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
 Plug 'puremourning/vimspector' "TODO: test to debug c-program
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 " TODO: https://github.com/mhinz/vim-signify
 " TODO FASTFOLD
 Plug 'Konfekt/FastFold'
-Plug 'tpope/vim-fugitive'
+" something ain't working with working dirs for fugitive....
+Plug 'tpope/vim-fugitive' 
 Plug 'tpope/vim-surround'
 Plug 'prettier/vim-prettier' ""TODO: automate on save
 Plug 'justinmk/vim-sneak'
