@@ -21,6 +21,7 @@ Plug 'Konfekt/FastFold'
 " something ain't working with working dirs for fugitive....
 Plug 'tpope/vim-fugitive' 
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-eunuch'
 Plug 'prettier/vim-prettier' ""TODO: automate on save
 Plug 'justinmk/vim-sneak'
 Plug 'airblade/vim-gitgutter'
