@@ -1,1 +1,2 @@
-nnoremap <leader>t :TagbarToggle<cr>
+nnoremap <leader>t :TagbarOpen fj<cr>
+let g:tagbar_autoclose=1
