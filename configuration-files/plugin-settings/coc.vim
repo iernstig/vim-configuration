@@ -24,6 +24,9 @@ else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
+let g:coc_snippet_next="<c-n>"
+let g:coc_snippet_prev="<c-p>"
+
 inoremap <silent><expr> <C-k> coc#refresh()
 nnoremap <leader>diag :CocDiagnostics<cr>
 nmap     <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
