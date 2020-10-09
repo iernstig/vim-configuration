@@ -41,6 +41,7 @@ nmap     <leader>gr <Plug>(coc-references)
 nmap     <leader>rr <Plug>(coc-rename)
 nmap     <silent> K :call <SID>show_documentation()<CR>
 nmap     <leader>cr :CocRestart
+
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -48,5 +49,9 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+nmap     <leader>ee :CocCommand explorer<cr>
+
+
 
 

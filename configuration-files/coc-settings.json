@@ -9,6 +9,9 @@
 	"list.normalMappings": {
 		"<C-c>": "do:exit"
 	},
+	"explorer.toggle": true,
+	"explorer.focus": true,
+	"explorer.previewAction.onHover": false,
 	"codeLens.enable": true,
 	"diagnostic.errorSign": "✘",
 	"diagnostic.warningSign": "▲",
