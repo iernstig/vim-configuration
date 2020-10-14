@@ -29,6 +29,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'wlangstroth/vim-racket'
 Plug 'sjl/tslime.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'vim-scripts/tinykeymap'
 if executable('task')
 	Plug 'blindFS/vim-taskwarrior'
 end

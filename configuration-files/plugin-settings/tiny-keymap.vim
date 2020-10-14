@@ -1,0 +1,2 @@
+call tinykeymap#Load('windows')
+
