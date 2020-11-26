@@ -7,8 +7,12 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>bn :bn<cr>
 nnoremap <leader>bp :bp<cr>
 nnoremap <leader>nn :tabnew<cr>
-nnoremap <leader>bb :Buffers<cr> "" FZF
-nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
+nnoremap <leader>tn :tabnext<cr>
+nnoremap <leader>tp :tabprevious<cr>
+nnoremap <leader>tc :tabclose<cr>
+nnoremap <leader>tab :tabs<cr>
+nnoremap <leader>bb :Buffers<cr> 
+nnoremap <leader>qq :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " save and close buffer
 " source current file 
