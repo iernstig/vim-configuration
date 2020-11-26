@@ -25,8 +25,7 @@ set clipboard=unnamed "share clipboard osx
 "" Code folding
 set foldmethod=syntax
 set foldnestmax=10
-set foldenable
-set foldlevel=2
+set foldlevel=10
 set foldlevelstart=0
 set autochdir "" Automatically change dir to current file in editor
 
@@ -34,5 +33,11 @@ set signcolumn=yes
 
 let g:session_dir="~/.vim-sessions"
 
+command! WipeReg :call WipeReg()
+function WipeReg()  
+    for i in range(34,122) 
+        silent! call setreg(nr2char(i), []) 
+    endfor
+endfunction
 "autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
