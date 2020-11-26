@@ -2,7 +2,7 @@
 nnoremap <leader>cc :Commands<cr>
 nnoremap <leader>ll :Lines<cr>
 nnoremap <leader>gf :GFiles<cr>
-nnoremap <leader>ff :Files ~<cr>
+nnoremap <leader>ff :Files $PWD<cr>
 "Hitting Ctrl-x will open the file under the cursor as a horizontal split.
 "Hitting Ctrl-v will alternatively open that file as a vertical split.
 nnoremap <leader>fpwd :Files $PWD<cr>
