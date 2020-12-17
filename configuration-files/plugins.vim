@@ -9,6 +9,7 @@ if version > 8
 end
 
 call plug#begin('~/.vim/plugged')
+Plug 'Shougo/echodoc.vim' ""TODO: configure this plugin
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
