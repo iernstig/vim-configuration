@@ -25,11 +25,10 @@ set clipboard=unnamed "share clipboard osx
 "" Code folding
 set foldmethod=syntax
 set foldnestmax=10
-set foldlevel=10
-set foldlevelstart=0
 set autochdir "" Automatically change dir to current file in editor
 
 set signcolumn=yes
+set foldlevel=99
 
 let g:session_dir="~/.vim-sessions"
 
