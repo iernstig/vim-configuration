@@ -40,3 +40,5 @@ function WipeReg()
 endfunction
 "autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
+"" Prevent VIM from selecting all the text in the terminal!
+autocmd VimEnter * set t_ut=
