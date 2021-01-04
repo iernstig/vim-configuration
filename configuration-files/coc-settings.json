@@ -78,10 +78,14 @@
 			"args": ["-background-index"]
 		},
 		"haskell": {
-			"command": "/Users/isakernstig/.local/bin/ghcide",
-			"args": ["-l", "hie-log", "-d"], 
+			"command": "haskell-language-server-wrapper",
+			"args": [
+				"--lsp"
+			], 
 			"rootPatterns": [
 				".stack.yaml",
+				".hie-bios",
+				"BUILD.bazel",
 				"cabal.config",
 				"package.yaml"
 			],
