@@ -56,3 +56,7 @@ for file in split(glob('~/.vim/configuration-files/plugin-settings/*.vim', '\n')
 	exe 'source' file
 endfor
 
+"" Source the strike-through/underline plugin
+source $HOME/.vim/configuration-files/unicode-strikethrough-underline.vim
+
+
