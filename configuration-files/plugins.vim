@@ -16,6 +16,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/vim-easy-align' 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
@@ -44,6 +45,7 @@ Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-obsession'
 Plug 'tmhedberg/SimpylFold' "folding for python
+Plug 'khzaw/vim-conceal'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
