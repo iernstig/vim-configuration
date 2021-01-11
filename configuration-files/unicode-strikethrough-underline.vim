@@ -10,3 +10,6 @@ endfunction
 
 vnoremap -- :Strikethrough<CR>
 vnoremap __ :Underline<CR>
+
+syntax match Normal '\[X\]' conceal cchar=☑
+syntax match Normal '\[_\]' conceal cchar=☐
