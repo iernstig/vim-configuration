@@ -106,6 +106,7 @@
 		},
 		"python": {
 			"command": "python",
+			"enable": false,
 			"args": [
 				"-mpyls",
 				"-vv",
