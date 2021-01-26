@@ -22,7 +22,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'puremourning/vimspector' 
 Plug 'sheerun/vim-polyglot'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 " TODO: https://github.com/mhinz/vim-signify
 " TODO FASTFOLD
 Plug 'Konfekt/FastFold'
