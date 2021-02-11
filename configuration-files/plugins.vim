@@ -46,6 +46,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-obsession'
 Plug 'tmhedberg/SimpylFold' "folding for python
 Plug 'khzaw/vim-conceal'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
@@ -59,6 +60,5 @@ for file in split(glob('~/.vim/configuration-files/plugin-settings/*.vim', '\n')
 endfor
 
 "" Source the strike-through/underline plugin
-source $HOME/.vim/configuration-files/unicode-strikethrough-underline.vim
-
+"" source $HOME/.vim/configuration-files/unicode-strikethrough-underline.vim
 
