@@ -24,6 +24,9 @@ exec     'nnoremap <Leader>sr :so ' . g:session_dir . '/'
 nnoremap H 0
 nnoremap L $
 
+"" Yank to xclip clipboard
+vnoremap <leader>y :w !xclip -selection clipboard<cr>
+
 "" Quitting session without deleting it!
 nnoremap <leader>ZZ :wqa<cr>
 
