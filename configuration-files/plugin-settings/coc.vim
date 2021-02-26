@@ -1,6 +1,6 @@
 let g:coc_config_home="$HOME/.vim/configuration-files"
 let g:coc_global_extensions = [
-			\ 'coc-python', 'coc-marketplace', 'coc-tsserver', 
+			\ 'coc-marketplace', 'coc-tsserver', 
 			\ 'coc-html', 'coc-css', 'coc-vimlsp',
 			\ 'coc-explorer', 'coc-lists' , 
 			\ 'coc-explorer', 
@@ -54,6 +54,9 @@ endfunction
 
 nmap     <leader>ee :CocCommand explorer<cr>
 
-
-
-
+if $CONDA_PREFIX == ""
+  let s:current_python_path=$CONDA_PYTHON_EXE
+else
+  let s:current_python_path=$CONDA_PREFIX.'/bin/python'
+endif
+call coc#config('python', {'pythonPath': s:current_python_path})
