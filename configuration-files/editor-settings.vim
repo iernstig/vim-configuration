@@ -10,6 +10,7 @@ set number relativenumber
 ":  autocmd BufEnter,FocusGained * set relativenumber
 ":  autocmd BufLeave,FocusLost   * set norelativenumber
 ":augroup END
+set mouse=a
 set ignorecase hlsearch "" Searching highlight
 set textwidth=80
 set colorcolumn=80
