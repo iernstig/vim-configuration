@@ -19,7 +19,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 Plug 'puremourning/vimspector' 
 Plug 'sheerun/vim-polyglot'
 " Plug 'jiangmiao/auto-pairs'
@@ -45,7 +45,7 @@ Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-obsession'
 Plug 'tmhedberg/SimpylFold' "folding for python
-Plug 'khzaw/vim-conceal'
+"" Plug 'khzaw/vim-conceal'
 Plug 'junegunn/goyo.vim'
 call plug#end()
 
