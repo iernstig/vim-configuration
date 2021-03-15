@@ -19,7 +19,7 @@ set spell spelllang=en_us
 set spellfile=$HOME/.vim/configuration-files/en.utf-8.add
 set complete+= "k" "" Enable dictionary auto-completion
 let g:netrw_banner=0 "" Remove banner for file browser
-hi SpellBad cterm=underline
+hi SpellBad ctermfg=fg ctermbg=red
 "" Replace tabs with spaces for Haskell for instance
 set expandtab
 set tabstop=4
