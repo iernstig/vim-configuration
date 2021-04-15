@@ -47,6 +47,7 @@ Plug 'tpope/vim-obsession'
 Plug 'tmhedberg/SimpylFold' "folding for python
 "" Plug 'khzaw/vim-conceal'
 Plug 'junegunn/goyo.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
