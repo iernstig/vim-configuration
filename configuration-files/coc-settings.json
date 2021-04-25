@@ -45,8 +45,8 @@
 		"typeParameter": "\uf278",
 		"default": "\uf29c"
 	},
-	"python.linting.flake8Enabled": true,
-	"python.linting.enabled": true,
+	"jedi.enable": true,
+	"jedi.startupMessage": true,
 	"languageserver": {
 		"ccls": {
 			"enable":false,
@@ -97,6 +97,6 @@
 			"command": "~/tmp",
 			"filetypes": ["mma"]
 		}
-	}
+  },
 }
 
