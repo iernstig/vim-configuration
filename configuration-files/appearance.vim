@@ -1,6 +1,6 @@
 set t_Co=256
 colorscheme gruvbox
-set background=dark
+set background=light
 set termguicolors
 let g:airline_powerline_fonts=0
 let g:gruvbox_sign_column='bg0'
@@ -16,3 +16,5 @@ set guifont=Fira\ Code
 set guioptions= "" remove scroll bars in macvim
 hi Cursor cterm=inverse
 autocmd ColorScheme *
+" Spelling
+hi SpellBad cterm=underline
