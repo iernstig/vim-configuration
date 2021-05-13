@@ -48,6 +48,7 @@ Plug 'tmhedberg/SimpylFold' "folding for python
 "" Plug 'khzaw/vim-conceal'
 Plug 'junegunn/goyo.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'chrisbra/csv.vim'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
