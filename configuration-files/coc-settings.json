@@ -12,6 +12,7 @@
 	"explorer.toggle": true,
 	"explorer.focus": true,
 	"explorer.previewAction.onHover": false,
+	"explorer.icon.enableNerdfont": true,
 	"codeLens.enable": true,
 	"diagnostic.errorSign": "✘",
 	"diagnostic.warningSign": "▲",
