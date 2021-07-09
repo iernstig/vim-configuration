@@ -13,6 +13,7 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-one'
 Plug 'junegunn/vim-easy-align' 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -48,6 +49,8 @@ Plug 'tmhedberg/SimpylFold' "folding for python
 Plug 'junegunn/goyo.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'chrisbra/csv.vim'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
