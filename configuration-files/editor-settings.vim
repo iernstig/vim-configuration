@@ -12,7 +12,7 @@ set number relativenumber
 ":augroup END
 set mouse=a
 set ignorecase hlsearch "" Searching highlight
-set textwidth=80
+set textwidth=0
 set colorcolumn=80
 "" Spell checking
 set spell spelllang=en_us
