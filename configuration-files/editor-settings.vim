@@ -13,6 +13,7 @@ set number relativenumber
 set mouse=a
 set ignorecase hlsearch "" Searching highlight
 set textwidth=0
+autocmd FileType text setlocal textwidth=80
 set colorcolumn=80
 "" Spell checking
 set spell spelllang=en_us
