@@ -50,7 +50,7 @@
 	"jedi.startupMessage": true,
 	"languageserver": {
 		"ccls": {
-			"enable":false,
+			"enable":true,
 			"command": "ccls",
 			"filetypes": [
 				"c",
