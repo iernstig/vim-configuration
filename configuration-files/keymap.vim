@@ -23,6 +23,17 @@ exec     'nnoremap <Leader>sr :so ' . g:session_dir . '/'
 "" Line nav
 nnoremap H 0
 nnoremap L $
+"" Sane yank
+nnoremap Y y$ 
+
+"" keeping cursor centered when jumping around
+nnoremap n nzzzv
+nnoremap N Nzzzv
+"" Does not work cuz I'm using coc... @TODO
+nnoremap <C-j> :cnext<CR>zzzv 
+"" Merge 2 lines. OMG this is so nice
+nnoremap J mzJ`z
+
 
 "" Yank to xclip clipboard
 if executable('xclip')
@@ -37,5 +48,14 @@ nnoremap <leader>ZZ :wqa<cr>
 
 "" for inserting in the next parenthesis! -- operator-pending mapping
 onoremap in( :<c-u>normal! f(vi(<cr>
+
+"" Moving lines and chunks around
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
+
 
 

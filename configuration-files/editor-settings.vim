@@ -49,3 +49,18 @@ endfunction
 
 "" Prevent VIM from selecting all the text in the terminal!
 autocmd VimEnter * set t_ut=
+
+"" UNDO breakpoints
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+inoremap [ [<c-g>u
+inoremap ] ]<c-g>u
+inoremap { {<c-g>u
+inoremap } }<c-g>u
+inoremap _ _<c-g>u
+
+"" Jumplist mutation -> ensure moving relative added to jumplist. 
+nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
