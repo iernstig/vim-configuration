@@ -12,8 +12,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" THEMES 
 Plug 'morhetz/gruvbox'
 Plug 'rakr/vim-one'
+Plug 'tomasiser/vim-code-dark'
+Plug 'crusoexia/vim-monokai'
+Plug 'kyoz/purify', {'rtp': 'vim'}
+Plug 'doums/darcula'
+Plug 'dracula/vim'
+Plug 'ayu-theme/ayu-vim'
+" END THEMES
 Plug 'junegunn/vim-easy-align' 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -51,6 +59,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'chrisbra/csv.vim'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'lifepillar/vim-solarized8'
+Plug 'HendrikPetertje/vimify'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
