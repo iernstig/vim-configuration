@@ -32,9 +32,7 @@ Plug 'puremourning/vimspector'
 Plug 'sheerun/vim-polyglot'
 " Plug 'jiangmiao/auto-pairs'
 " TODO: https://github.com/mhinz/vim-signify
-" TODO FASTFOLD
 Plug 'Konfekt/FastFold'
-" something ain't working with working dirs for fugitive....
 Plug 'tpope/vim-fugitive' 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch' "" not really using this atm...
