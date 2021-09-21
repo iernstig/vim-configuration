@@ -52,7 +52,7 @@ function! s:show_documentation()
   endif
 endfunction
 
-nmap     <leader>ee :CocCommand explorer<cr>
+nmap     <leader>ee :CocCommand explorer --quit-on-open<cr>
 
 if $CONDA_PREFIX == ""
   let s:current_python_path=$CONDA_PYTHON_EXE
