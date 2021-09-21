@@ -2,7 +2,7 @@ set t_Co=256
 " colorscheme gruvbox
 set termguicolors
 "colorscheme solarized8
-let ayucolor="mirage"
+let ayucolor="dark"
 colorscheme ayu
 set background=dark
 let g:airline_powerline_fonts=0
