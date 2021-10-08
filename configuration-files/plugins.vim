@@ -22,7 +22,8 @@ Plug 'doums/darcula'
 Plug 'dracula/vim'
 Plug 'ayu-theme/ayu-vim'
 " END THEMES
-Plug 'junegunn/vim-easy-align' 
+"Plug 'junegunn/vim-easy-align' 
+Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
