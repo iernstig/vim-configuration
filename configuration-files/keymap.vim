@@ -17,8 +17,8 @@ nnoremap <leader>qq :bp<bar>sp<bar>bn<bar>bd<CR>
 " save and close buffer
 " source current file 
 nnoremap <leader>so :execute ":so %"<cr> :echo "sourced ".getreg('%')<cr>
-exec     "nnoremap <leader>ss :mks! " . g:session_dir . "/"
 exec     'nnoremap <Leader>sr :so ' . g:session_dir . '/'
+exec     "nnoremap <leader>ss :mks! " . g:session_dir . "/"
 
 "" Line nav
 nnoremap H 0
@@ -58,4 +58,25 @@ nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 
 
+"" fold all metod 
+nnoremap zdoc :call CommentPydoc()
+
+function AtEndOfFile()
+  return line(".") == line("$")
+endfunction
+
+function CommentPydoc()
+  :normal zR
+  :normal gg
+  
+  while !AtEndOfFile()
+    """ find if the current line has the three rabbit-snips for comment
+    if match(getline('.'), '"""') > 0
+      """
+      :normal za
+    endif
+    """ Move through all the comments syntactically
+    :normal ]mj 
+  endwhile
+endfunction
 
