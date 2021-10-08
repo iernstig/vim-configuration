@@ -29,6 +29,7 @@ set clipboard=unnamed "share clipboard osx
 "" Remove trailing whitespaces by pressing f5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
+set noswapfile
 "" Code folding
 set foldmethod=syntax
 set foldnestmax=10
