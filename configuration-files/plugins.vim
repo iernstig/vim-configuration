@@ -31,6 +31,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'dense-analysis/ale'
 Plug 'puremourning/vimspector' 
 Plug 'sheerun/vim-polyglot'
+Plug 'liuchengxu/vista.vim'
 " Plug 'jiangmiao/auto-pairs'
 " TODO: https://github.com/mhinz/vim-signify
 Plug 'Konfekt/FastFold'
@@ -46,7 +47,7 @@ Plug 'sjl/tslime.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'vim-scripts/tinykeymap'
 if executable('task')
-	Plug 'blindFS/vim-taskwarrior'
+  Plug 'blindFS/vim-taskwarrior'
 end
 Plug 'majutsushi/tagbar' 
 Plug 'christoomey/vim-tmux-navigator'
