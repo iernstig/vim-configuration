@@ -18,6 +18,7 @@
 	"diagnostic.warningSign": "▲",
 	"diagnostic.infoSign": "",
 	"diagnostic.messageTarget": "float",
+	"diagnostic.virtualText": true,
 	"suggest.enablePreview": true,
 	"suggest.completionItemKindLabels": {
 		"function": "\uf794",
@@ -50,7 +51,7 @@
 	"jedi.startupMessage": true,
 	"languageserver": {
 		"ccls": {
-			"enable":true,
+			"enable": true,
 			"command": "ccls",
 			"filetypes": [
 				"c",
@@ -75,7 +76,7 @@
 			"command": "haskell-language-server-wrapper",
 			"args": [
 				"--lsp"
-			], 
+			],
 			"rootPatterns": [
 				".stack.yaml",
 				".hie-bios",
@@ -89,15 +90,20 @@
 				"haskell"
 			],
 			"initializationOptions": {
-				"languageServerHaskell": {
-				}
+				"languageServerHaskell": {}
 			},
 			"trace.server": "verbose"
 		},
-		"matlab":{
+		"matlab": {
 			"command": "~/tmp",
-			"filetypes": ["mma"]
+			"filetypes": [
+				"mma"
+			]
 		}
-  }
+	},
+	"python.formatting.provider": "black",
+	"coc.preferences.formatOnSaveFiletypes": [
+		"json",
+		"python"
+	]
 }
-
