@@ -5,7 +5,7 @@ set termguicolors
 let ayucolor="mirage"
 colorscheme one
 set background=light
-let g:airline_powerline_fonts=0
+let g:airline_powerline_fonts=1
 let g:airline_theme='one'
 "let g:gruvbox_contrast_dark='medium'
 "let g:gruvbox_contrast_light='medium'
