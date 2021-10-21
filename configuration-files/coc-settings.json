@@ -47,8 +47,6 @@
 		"typeParameter": "\uf278",
 		"default": "\uf29c"
 	},
-	"jedi.enable": true,
-	"jedi.startupMessage": true,
 	"languageserver": {
 		"ccls": {
 			"enable": true,
@@ -102,8 +100,22 @@
 		}
 	},
 	"python.formatting.provider": "black",
+	"python.linting.mypyEnabled": false,
+	"python.analysis.typeshedPaths": [
+		"/home/iernstig/miniconda3/lib/python3.9/site-packages/mypy/typeshed"
+	],
 	"coc.preferences.formatOnSaveFiletypes": [
 		"json",
 		"python"
-	]
+	],
+	"snippets.snipmate.enable": true,
+	"html.format.preserveNewLines": false,
+	"html.format.indentInnerHtml": true,
+	"html.format.wrapLineLength": 80,
+	"html.format.enable": true,
+	"html.filetypes": [
+		"html"
+	],
+	"python.pythonPath": "/home/iernstig/miniconda3/python",
+	"pydocstring.formatter": "google"
 }
