@@ -100,11 +100,11 @@
 		}
 	},
 	"python.formatting.provider": "black",
-	"python.linting.mypyEnabled": false,
+	"python.linting.mypyEnabled": true,
 	"python.analysis.typeshedPaths": [
 		"/home/iernstig/miniconda3/lib/python3.9/site-packages/mypy/typeshed"
 	],
-	"coc.preferences.formatOnSaveFiletypes": [
+	"coc.pref4rences.formatOnSaveFiletypes": [
 		"json",
 		"python"
 	],
@@ -116,6 +116,6 @@
 	"html.filetypes": [
 		"html"
 	],
-	"python.pythonPath": "/home/iernstig/miniconda3/python",
-	"pydocstring.formatter": "google"
+	"pydocstring.formatter": "google",
+	"python.pythonPath": "/home/iernstig/miniconda3/bin/python"
 }
