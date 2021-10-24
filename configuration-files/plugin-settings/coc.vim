@@ -4,7 +4,7 @@ let g:coc_global_extensions = [
 			\ 'coc-html', 'coc-css', 'coc-vimlsp',
 			\ 'coc-explorer', 'coc-lists' , 
             \ 'coc-pyright', 'coc-json', 'coc-clangd',
-			\ 'vim-lsp', 'coc-yaml'
+			\ 'coc-vimlsp', 'coc-yaml'
             \]
 " 'coc-tabnine', - caused memory leak issue - I think...
 "'coc-json', missing since something coc won't update shit
