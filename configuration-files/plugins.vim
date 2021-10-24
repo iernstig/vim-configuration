@@ -38,7 +38,22 @@ Plug 'Konfekt/FastFold'
 Plug 'tpope/vim-fugitive' 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch' "" not really using this atm...
-Plug 'prettier/vim-prettier' ""TODO: automate on save
+Plug 'prettier/vim-prettier', {
+      \ 'do': 'yarn install',
+      \ 'for': 
+      \['javascript',
+      \ 'typescript',
+      \ 'css',
+      \ 'less',
+      \ 'scss',
+      \ 'json',
+      \ 'graphql',
+      \ 'markdown',
+      \ 'vue',
+      \ 'svelte',
+      \ 'yaml',
+      \ 'html'] 
+      \}
 Plug 'justinmk/vim-sneak' "" not really using this either...
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/rainbow_parentheses.vim'
