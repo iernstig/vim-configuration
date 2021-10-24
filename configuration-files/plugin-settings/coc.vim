@@ -3,9 +3,10 @@ let g:coc_global_extensions = [
 			\ 'coc-marketplace', 'coc-tsserver', 
 			\ 'coc-html', 'coc-css', 'coc-vimlsp',
 			\ 'coc-explorer', 'coc-lists' , 
-			\ 'coc-explorer' 
-			\]
-"" 'coc-tabnine', - caused memory leak issue - I think...
+            \ 'coc-pyright', 'coc-json', 'coc-clangd',
+			\ 'vim-lsp', 'coc-yaml'
+            \]
+" 'coc-tabnine', - caused memory leak issue - I think...
 "'coc-json', missing since something coc won't update shit
 "" Auto completion popup
 inoremap <silent><expr> <TAB>
@@ -44,6 +45,12 @@ nmap     <leader>rr <Plug>(coc-rename)
 nmap     <silent> K :call <SID>show_documentation()<CR>
 nmap     <leader>cr :CocRestart
 
+"" Pydoc
+nmap <silent> ga <Plug>(coc-codeaction-line)
+xmap <silent> ga <Plug>(coc-codeaction-selected)
+nmap <silent> gA <Plug>(coc-codeaction)
+
+
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -60,3 +67,52 @@ else
   let s:current_python_path=$CONDA_PREFIX.'/bin/python'
 endif
 call coc#config('python', {'pythonPath': s:current_python_path})
+
+let g:coc_explorer_global_presets = {
+\   '.vim': {
+\     'root-uri': '~/.vim',
+\   },
+\   'cocConfig': {
+\      'root-uri': '~/.config/coc',
+\   },
+\   'tab': {
+\     'position': 'tab',
+\     'quit-on-open': v:true,
+\   },
+\   'tab:$': {
+\     'position': 'tab:$',
+\     'quit-on-open': v:true,
+\   },
+\   'floating': {
+\     'position': 'floating',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingTop': {
+\     'position': 'floating',
+\     'floating-position': 'center-top',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingLeftside': {
+\     'position': 'floating',
+\     'floating-position': 'left-center',
+\     'floating-width': 50,
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingRightside': {
+\     'position': 'floating',
+\     'floating-position': 'right-center',
+\     'floating-width': 50,
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'simplify': {
+\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   },
+\   'buffer': {
+\     'sources': [{'name': 'buffer', 'expand': v:true}]
+\   },
+\ }
+nnoremap <leader>ee :CocCommand explorer --preset simplify --quit-on-open<CR>
+nnoremap <leader>ef :CocCommand explorer --preset floating<CR>
+nnoremap <leader>ec :CocCommand explorer --preset cocConfig<CR>
+nnoremap <leader>eb :CocCommand explorer --preset buffer<CR>
+
