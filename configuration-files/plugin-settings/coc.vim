@@ -50,6 +50,9 @@ nmap <silent> ga <Plug>(coc-codeaction-line)
 xmap <silent> ga <Plug>(coc-codeaction-selected)
 nmap <silent> gA <Plug>(coc-codeaction)
 
+"" Sort imports on save
+autocmd BufWritePre *.py :CocCommand python.sortImports
+
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
