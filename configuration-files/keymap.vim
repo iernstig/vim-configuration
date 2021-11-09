@@ -107,11 +107,14 @@ endfunction
 
 "the c-u does a union of all lines in visual selection.
 "this goes in the vimrc
-let bufferpath = expand("$HOME/.vimbuffer")
-vnoremap <leader>y :<c-u>call Save_visually_selected_text_to_file(bufferpath)<cr>
+"let bufferpath = expand("$HOME/.vimbuffer")
+"vnoremap <leader>y :<c-u>call Save_visually_selected_text_to_file(bufferpath)<cr>:!cat ~/.vimbuffer | !xclip -selection clipboard <cr><cr>
 
 " This will only work on unix systems, might be a problem?
-" copy to buffer
+  " copy to buffer
 " #nnoremap <leader>y :.w! g:bufferpath<CR>
 " paste from buffer
-map <leader>p :r ~/.vimbuffer<CR>
+""map <leader>p :r ~/.vimbuffer<CR>
+""xnoremap <leader>c <esc>:'<,'>w !xclip -selection clipboard<cr>
+vnoremap <silent><Leader>y "yy <Bar> :call system('xclip -selection clipboard', @y)<CR>
+
