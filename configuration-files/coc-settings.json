@@ -104,7 +104,7 @@
 	"python.analysis.typeshedPaths": [
 		"/home/iernstig/miniconda3/lib/python3.9/site-packages/mypy/typeshed"
 	],
-	"coc.pref4rences.formatOnSaveFiletypes": [
+	"coc.preferences.formatOnSaveFiletypes": [
 		"json",
 		"python"
 	],
@@ -117,5 +117,6 @@
 		"html"
 	],
 	"pydocstring.formatter": "google",
-	"python.pythonPath": "/home/iernstig/miniconda3/bin/python"
+	"python.pythonPath": "/home/iernstig/miniconda3/bin/python",
+	"python.formatting.blackPath": "/home/iernstig/miniconda3/bin/black"
 }
