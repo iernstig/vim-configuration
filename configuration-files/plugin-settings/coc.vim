@@ -52,6 +52,8 @@ nmap <silent> gA <Plug>(coc-codeaction)
 
 "" Sort imports on save
 autocmd BufWritePre *.py :CocCommand python.sortImports
+"" Run black on save
+autocmd BufWritePre *.py :call CocAction('format')
 
 
 function! s:show_documentation()
