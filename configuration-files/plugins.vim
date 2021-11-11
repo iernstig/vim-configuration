@@ -62,6 +62,7 @@ Plug 'sjl/tslime.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'vim-scripts/tinykeymap'
 Plug 'honza/vim-snippets'
+Plug 'dhruvasagar/vim-table-mode'
 if executable('task')
   Plug 'blindFS/vim-taskwarrior'
 end
