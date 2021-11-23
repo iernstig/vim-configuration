@@ -38,12 +38,12 @@ nnoremap J mzJ`z
 "" Something stopped working here, and I dunno what or why. But that's an
 "" issue which you'll have to postpone to the future...
 
-if executable('xclip')
-  vnoremap <leader>y :w !xclip -selection clipboard<cr>
-endif
-if executable('pbcopy')
-  vnoremap <leader>y :w !pbcopy -selection clipboard<cr>
-endif
+"if executable('xclip')
+  "vnoremap <leader>y :w !xclip -selection clipboard<cr>
+"endif
+"if executable('pbcopy')
+  "vnoremap <leader>y :w !pbcopy -selection clipboard<cr>
+"endif
 
 "" Quitting session without deleting it!
 nnoremap <leader>ZZ :wqa<cr>
@@ -105,16 +105,8 @@ function Save_visually_selected_text_to_file(bufferpath)
 endfunction
 
 
-"the c-u does a union of all lines in visual selection.
-"this goes in the vimrc
-"let bufferpath = expand("$HOME/.vimbuffer")
-"vnoremap <leader>y :<c-u>call Save_visually_selected_text_to_file(bufferpath)<cr>:!cat ~/.vimbuffer | !xclip -selection clipboard <cr><cr>
+vnoremap <leader>y  ma"+y <cr>`a
+vnoremap <leader>p ma"+p <cr>`a
 
-" This will only work on unix systems, might be a problem?
-  " copy to buffer
-" #nnoremap <leader>y :.w! g:bufferpath<CR>
-" paste from buffer
-""map <leader>p :r ~/.vimbuffer<CR>
-""xnoremap <leader>c <esc>:'<,'>w !xclip -selection clipboard<cr>
-vnoremap <silent><Leader>y "yy <Bar> :call system('xclip -selection clipboard', @y)<CR>
+
 
