@@ -108,5 +108,7 @@ endfunction
 vnoremap <leader>y  ma"+y <cr>`a
 vnoremap <leader>p ma"+p <cr>`a
 
+nnoremap <leader>yw ma"+yw <cr>`a
+nnoremap <leader>p ma"+p <cr>`a
 
 
