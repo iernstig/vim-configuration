@@ -17,7 +17,6 @@
 	"diagnostic.errorSign": "✘",
 	"diagnostic.warningSign": "▲",
 	"diagnostic.infoSign": "",
-	"diagnostic.messageTarget": "float",
 	"diagnostic.virtualText": true,
 	"suggest.enablePreview": true,
 	"suggest.completionItemKindLabels": {
@@ -116,5 +115,5 @@
 		"html"
 	],
 	"pydocstring.formatter": "google",
-	"python.pythonPath": "/home/iernstig/miniconda3/bin/python"
+	"python.formatting.provider": "black"
 }
