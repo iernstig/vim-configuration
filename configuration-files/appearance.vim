@@ -4,7 +4,7 @@ set termguicolors
 "colorscheme solarized8
 let ayucolor="mirage"
 colorscheme one
-set background=light
+set background=dark
 let g:airline_powerline_fonts=1
 let g:airline_theme='one'
 "let g:gruvbox_contrast_dark='medium'
@@ -17,7 +17,7 @@ set cursorline
 set guifont=Fira\ Code
 "" Font for terminal is 'Hack Nerd Font'
 set guioptions= "" remove scroll bars in macvim
-hi Cursor cterm=inverse
+hi Cursor ctermfg=white
 """ autocmd ColorScheme *
 " Spelling
 hi SpellBad cterm=underline
