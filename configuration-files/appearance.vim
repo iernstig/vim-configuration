@@ -4,7 +4,7 @@ set termguicolors
 "colorscheme solarized8
 let ayucolor="mirage"
 colorscheme one
-set background=dark
+set background=light
 let g:airline_powerline_fonts=1
 let g:airline_theme='one'
 "let g:gruvbox_contrast_dark='medium'
