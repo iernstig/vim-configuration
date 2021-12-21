@@ -51,7 +51,7 @@ xmap <silent> ga <Plug>(coc-codeaction-selected)
 nmap <silent> gA <Plug>(coc-codeaction)
 
 "" Sort imports on save
-autocmd BufWritePre *.py :CocCommand python.sortImports
+"autocmd BufWritePre *.py :CocCommand python.sortImports
 "" Run black on save
 autocmd BufWritePre *.py :call CocAction('format')
 
@@ -64,7 +64,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-nmap     <leader>ee :CocCommand explorer --quit-on-open<cr>
 
 if $CONDA_PREFIX == ""
   let s:current_python_path=$CONDA_PYTHON_EXE
@@ -116,7 +115,7 @@ let g:coc_explorer_global_presets = {
 \     'sources': [{'name': 'buffer', 'expand': v:true}]
 \   },
 \ }
-nnoremap <leader>ee :CocCommand explorer --preset simplify --quit-on-open<CR>
+nnoremap <leader>ee :CocCommand explorer --preset simplify --quit-on-open<CR><CR>
 nnoremap <leader>ef :CocCommand explorer --preset floating<CR>
 nnoremap <leader>ec :CocCommand explorer --preset cocConfig<CR>
 nnoremap <leader>eb :CocCommand explorer --preset buffer<CR>

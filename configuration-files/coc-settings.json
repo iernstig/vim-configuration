@@ -98,7 +98,7 @@
 			]
 		}
 	},
-	"python.linting.mypyEnabled": true,
+	"python.linting.mypyEnabled": false,
 	"python.analysis.typeshedPaths": [
 		"/home/iernstig/miniconda3/lib/python3.9/site-packages/mypy/typeshed"
 	],
@@ -115,5 +115,5 @@
 		"html"
 	],
 	"pydocstring.formatter": "google",
-	"python.formatting.provider": "black"
+	"python.formatting.provider":"black"
 }
