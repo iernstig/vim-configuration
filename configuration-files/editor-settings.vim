@@ -16,7 +16,7 @@ set textwidth=0
 autocmd FileType text setlocal textwidth=80
 set colorcolumn=80
 "" Spell checking
-set spell spelllang=en_us
+set spell spelllang=en_us,sv
 set spellfile=$HOME/.vim/configuration-files/en.utf-8.add
 set complete+= "k" "" Enable dictionary auto-completion
 let g:netrw_banner=0 "" Remove banner for file browser
