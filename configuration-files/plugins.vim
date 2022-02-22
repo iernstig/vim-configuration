@@ -63,6 +63,7 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'lifepillar/vim-solarized8'
 Plug 'frazrepo/vim-rainbow'
 Plug 'gyim/vim-boxdraw' 
+Plug 'vim-python/python-syntax'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
@@ -72,6 +73,11 @@ endif
 
 "" Load all plugin configuration files
 for file in split(glob('~/.vim/configuration-files/plugin-settings/*.vim', '\n'))
+	exe 'source' file
+endfor
+
+"" Load all language specific settings
+for file in split(glob('~/.vim/configuration-files/lang-specific/*.vim', '\n'))
 	exe 'source' file
 endfor
 
