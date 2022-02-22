@@ -8,6 +8,7 @@ let g:coc_global_extensions = [
             \]
 " 'coc-tabnine', - caused memory leak issue - I think...
 "'coc-json', missing since something coc won't update shit
+
 "" Auto completion popup
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
