@@ -63,8 +63,10 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'lifepillar/vim-solarized8'
 Plug 'frazrepo/vim-rainbow'
 Plug 'gyim/vim-boxdraw' 
+Plug 'alvan/vim-closetag'
 Plug 'vim-python/python-syntax'
 call plug#end()
+let g:python_highlight_all = 1
 
 " Run PlugInstall if there are missing plugins
 if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
