@@ -1,10 +1,10 @@
 set t_Co=256
-" colorscheme gruvbox
-set termguicolors
+colorscheme gruvbox
+"set termguicolors
 "colorscheme solarized8
 "let ayucolor="mirage"
-colorscheme PaperColor
-set background=light
+"colorscheme PaperColor
+set background=dark
 let g:airline_powerline_fonts=1
 let g:airline_theme='one'
 "let g:gruvbox_contrast_dark='medium'
