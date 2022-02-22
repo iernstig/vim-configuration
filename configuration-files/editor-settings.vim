@@ -40,6 +40,9 @@ set foldlevel=99
 
 let g:session_dir="~/.vim-sessions"
 
+"" make :Q to :Q
+command! Q :q
+
 command! WipeReg :call WipeReg()
 function WipeReg()  
     for i in range(34,122) 
