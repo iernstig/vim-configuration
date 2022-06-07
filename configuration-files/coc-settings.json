@@ -104,7 +104,6 @@
 	],
 	"coc.preferences.formatOnSaveFiletypes": [
 		"json",
-		"python"
 	],
 	"snippets.snipmate.enable": true,
 	"html.format.preserveNewLines": false,
@@ -115,5 +114,7 @@
 		"html"
 	],
 	"pydocstring.formatter": "google",
-	"python.formatting.provider":"black"
+  "python.formatting.provider": "black",
+  "python.analysis.typeCheckingMode": "off",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
 }

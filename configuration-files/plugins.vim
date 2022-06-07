@@ -30,7 +30,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'dense-analysis/ale'
-Plug 'puremourning/vimspector' 
+"Plug 'puremourning/vimspector' 
 Plug 'sheerun/vim-polyglot'
 Plug 'liuchengxu/vista.vim'
 " Plug 'jiangmiao/auto-pairs'
@@ -48,6 +48,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-scripts/tinykeymap'
 Plug 'honza/vim-snippets'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'chr4/nginx.vim'
 if executable('task')
   Plug 'blindFS/vim-taskwarrior'
 end
@@ -65,6 +66,9 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'gyim/vim-boxdraw' 
 Plug 'alvan/vim-closetag'
 Plug 'vim-python/python-syntax'
+Plug 'brooth/far.vim'
+Plug 'tikhomirov/vim-glsl'
+"Plug 'hoschi/yode-nvim'
 call plug#end()
 let g:python_highlight_all = 1
 
